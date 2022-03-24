@@ -219,8 +219,11 @@ variable "oci_fc_vc_oracle_bgp_peering_ip" {
 
 variable "oci_fc_vc_bgp_customer_asn" {
   type        = string
-  description = "The BGP ASN of the network on the Equinix end of the BGP session."
-  default     = "65432"
+  description = <<EOF
+  The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration on the Equinix end
+  of the BGP session.
+  EOF
+  default     = "65000"
 }
 
 variable "oci_fc_vc_bgp_auth_key" {

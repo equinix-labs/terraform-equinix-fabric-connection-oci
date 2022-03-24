@@ -105,5 +105,5 @@ resource "equinix_network_bgp" "this" {
   local_asn          = tonumber(local.oci_bgp_config.customer_asn)
   remote_ip_address  = split("/", local.oci_bgp_config.oracle_bgp_peering_ip)[0]
   remote_asn         = tonumber(local.oci_bgp_config.oracle_bgp_asn)
-  authentication_key = local.oci_bgp_config.bgp_md5auth_key
+  authentication_key = local.oci_bgp_config.bgp_md5auth_key != "" ? local.oci_bgp_config.bgp_md5auth_key : null
 }
