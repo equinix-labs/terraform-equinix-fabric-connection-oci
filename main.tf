@@ -88,7 +88,7 @@ resource "oci_core_virtual_circuit" "this" {
 
 module "equinix-fabric-connection" {
   source = "equinix-labs/fabric-connection/equinix"
-  version = "0.1.1"
+  version = "0.3.1"
 
   # required variables
   notification_users = var.fabric_notification_users
@@ -107,7 +107,7 @@ module "equinix-fabric-connection" {
   service_token_id          = var.fabric_service_token_id
   speed                     = var.fabric_speed * 1000
   speed_unit                = "MB"
-  purcharse_order_number    = var.fabric_purcharse_order_number
+  purchase_order_number     = var.fabric_purchase_order_number
 }
 
 resource "equinix_network_bgp" "this" {
