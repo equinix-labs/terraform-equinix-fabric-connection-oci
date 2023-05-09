@@ -181,7 +181,7 @@ variable "oci_drg_id" {
 }
 
 variable "oci_drg_vcn_attachments" {
-  type = map(any)
+  type        = map(any)
   description = <<EOF
   Attaches the DRG to one or more VCN. Map of maps where the key can be any string to
   identify a unique VCN and value is a map where expected keys are: 'vcn_id' (Required - The OCID of the
@@ -195,7 +195,7 @@ variable "oci_drg_vcn_attachments" {
   Check the examples for more details.
   }
   EOF
-  default = {}
+  default     = {}
 }
 
 variable "oci_region" {
@@ -204,7 +204,7 @@ variable "oci_region" {
   The OCI region where resources will be created. Check the list of OCI regions
   [here](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/regions.htm#ServiceAvailabilityAcrossRegions).
   EOF
-  default = ""
+  default     = ""
 }
 
 variable "oci_freeform_tags" {
@@ -231,7 +231,7 @@ variable "oci_defined_tags" {
 variable "oci_fc_vc_name" {
   type        = string
   description = "The name of the Fast Connect private Virtual Circuit. If unspecified, it will be auto-generated."
-  default = ""
+  default     = ""
 }
 
 variable "oci_fc_vc_customer_bgp_peering_ip" {
