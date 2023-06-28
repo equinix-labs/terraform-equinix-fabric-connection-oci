@@ -92,3 +92,4 @@ See <https://registry.terraform.io/modules/equinix-labs/fabric-connection-oci/eq
 
 - [Fabric Port connection](https://registry.terraform.io/modules/equinix-labs/fabric-connection-oci/equinix/latest/examples/fabric-port-connection/)
 - [Network Edge device connection](https://registry.terraform.io/modules/equinix-labs/fabric-connection-oci/equinix/latest/examples/network-edge-device-connection/)
+- [Service Token (a-side) Equinix Metal to OCI redundant connection End-to-End Solution](https://registry.terraform.io/modules/equinix-labs/fabric-connection-oci/equinix/latest/examples/service-token-metal-to-oci-connection/)
